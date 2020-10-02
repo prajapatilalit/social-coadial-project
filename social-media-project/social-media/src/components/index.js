@@ -1,13 +1,4 @@
-import React, { Component } from 'react';
+import PostsList from './PostList';
+import App from './App';
 
-class index extends Component {
-    render() {
-        return (
-            <div>
-                asad
-            </div>
-        );
-    }
-}
-
-export default index;
+export { App, PostsList };
