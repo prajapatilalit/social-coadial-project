@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import propTypes from 'prop-types';
 
-class PostList extends Component {
+class PostsList extends Component {
   render() {
     const { posts } = this.props;
     return (
-      <div className="post-list">
+      <div className="posts-list">
         {posts.map((post) => (
           <div className="post-wrapper" key={post._id}>
             <div className="post-header">
@@ -57,8 +57,8 @@ class PostList extends Component {
   }
 }
 
-PostList.protoTypes = {
+PostsList.protoTypes = {
   posts: propTypes.array.isRequired,
 };
 
-export default PostList;
+export default PostsList;
